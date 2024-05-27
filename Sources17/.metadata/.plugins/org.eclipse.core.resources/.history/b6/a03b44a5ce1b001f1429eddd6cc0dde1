@@ -1,0 +1,26 @@
+package ch05_ex01;
+
+public class Arr01 {
+
+	public static void main(String[] args) {
+		int [ ] a = new int[5];
+		a [0] = 7;
+		a [1] = 34;
+		a [2] = 67;
+		a [3] = 6;
+		a [4] = 234;
+		int [ ] b = new int [5];
+		b [0] = 7;
+		b [1] = 34;
+		b [2] = 67;
+		b [3] = 6;
+		b [4] = 234;
+		
+		for (int i = 0; i < 5; i++) {
+			//System.out.println("a["+i+"]="+a[i]);
+			System.out.printf("a[%d]=%d \n", i , a[i]);
+		}
+		
+	}
+
+}

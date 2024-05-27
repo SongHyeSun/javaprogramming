@@ -1,0 +1,20 @@
+package ch02_ex02;
+
+public class ConditionalAndEx {
+
+	public static void main(String[] args) {
+		int num1 = -1, num2 = 0;
+		//전역변수, 지역변수
+		if (++num1 > 0 || ++num2 > 0)
+			//&& = and, || = or
+			//and 조건이기 때문에 앞에 조건이 성립이 되지 않아서 아예 뒤의 항은 대입도 안했다.
+			System.out.println("num1이 0보다 크고 num2가 0보다 큽니다.");
+	
+		System.out.println("num1 = " + num1);
+		System.out.println("num2 = " + num2);
+		
+		//들여쓰기 줄 맞추기!!!
+
+	}
+
+}

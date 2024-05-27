@@ -1,0 +1,18 @@
+package ch02;
+
+public class OperationsPromotionEx {
+
+	public static void main(String[] args) {
+		byte byteValue1 = 10;
+		byte byteValue2 = 20;
+		
+		//+
+		byte byteValue3 = byteValue1 + byteValue2; //컴파일 에러 (숫자가 127까지라서 안될 가능성이 높다.)
+		//그래서 아예 byte+byte = byte는 막아둠
+		
+		int intValue1 = byteValue1 + byteValue2;
+		System.out.println("intValue1->"+intValue1);
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package ch05_ex01;
+
+public class ArrayEx15 {
+
+	public static void main(String[] args) {
+		if (args.length !=3) {
+			System.out.println("usage : java ArrayEx15 NUM1 OP NUM2");
+			System.exit(0);
+		}
+		char op = args[1].charAt(0);    	//문자열을 문자(char)로 변환한다.
+		
+        // HW01
+		// + , - , X , / 수행 -->  switch
+		// *는 .classpath를 가르키므로 x로 변경하여 사용하였음 
+		
+
+	}
+
+}

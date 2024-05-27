@@ -1,0 +1,13 @@
+package ch04_ex02;
+
+//현장work
+public class SwitchNoBreakCaseEx {
+
+	public static void main(String[] args) {
+		// 8 <= ... < 12(8+4) 사이의 정수 얻기    --> random
+		int time = (int) (Math.random ()*4) +8;
+		System.out.println("[현재시간:  " + time + " 시]");
+
+	}
+
+}

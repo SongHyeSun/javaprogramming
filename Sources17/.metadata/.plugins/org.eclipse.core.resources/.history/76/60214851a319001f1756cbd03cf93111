@@ -1,0 +1,21 @@
+package ch04_ex02;
+
+//Hw3
+public class SwitchStringEx {
+
+	public static void main(String[] args) {
+		String position = args[0];
+		
+		switch (position) {
+		case "부장" : 
+		}
+		//부장 -> 700만원
+		//과장 -> 500만원
+		//그 외 ->300만원
+		switch (position) {
+		
+		}
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package ch04_ex01;
+
+//현장 work
+public class If04 {
+
+	public static void main(String[] args) {
+		int score = Integer.parseInt(args[0]);
+		String grade = "";
+
+	}
+
+}

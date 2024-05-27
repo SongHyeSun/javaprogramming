@@ -1,0 +1,19 @@
+package ch04_ex01;
+
+import java.io.IOException;
+
+public class While02 {
+
+													//error가 나오면 던저줄게 라는 의미 -> error가 발생한 곳에 마우스 
+	public static void main(String[] args) throws IOException {
+		System.out.println("보고싶은 구구단은?");
+	// ASCII코드 값으로 계산한 것
+	//5를 넣으면      53				-48
+	//9를 넣으면      57            -48
+		int num = System.in.read( )-'0';;
+		System.out.println("num->"+num);
+		
+
+	}
+
+}

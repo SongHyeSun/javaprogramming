@@ -1,0 +1,25 @@
+package ch02;
+
+public class FloatDoubleEx {
+
+	public static void main(String[] args) {
+		//실수값 저장
+		double var1 = 3.14;
+		//float  var2 = 3.14; -> 그냥 선언 시 기본은 double
+		float  var2 = 3.14F;
+		//float은 F를 붙혀줘야한다.
+		
+		//정밀도테스트
+		double var4 = 0.123456789123456789;
+		float  var5 = 0.123456789123456789F;
+		
+		
+		System.out.println("var1: "+var1);
+		System.out.println("var2: "+var2);
+		System.out.println("var4: "+var4);
+		System.out.println("var5: "+var5);
+
+
+	}
+
+}

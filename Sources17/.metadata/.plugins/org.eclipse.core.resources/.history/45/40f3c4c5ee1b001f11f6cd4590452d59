@@ -1,0 +1,42 @@
+package ch05_ex01;
+
+public class ArrayCopy01 {
+
+	public static void main(String[] args) {
+		//Index->  0 1 2 3 4 5 6
+		int [ ] a = {1,2,3,4,5,6,7};
+		int [ ] b = new int [10];
+		// b배열은 10개가 있다. 나머지 배열값은 0으로 처리된다.
+		
+		for (int i = 0 ; i < a.length ;  i++ ) {
+			b[i] = a[i];
+		}
+		System.out.println("---------a, 0, b, 0, a.length------------");
+		//						   a의 Index 0 을 -> Target(b) 의 Index 0 복사 [a.length만큼]
+		System.arraycopy(a,             0,             b,                    0,          a.length);
+		//reference 값은해시코드
+		//primitive값은 기본 값으로
+		// System.out.println("b->" + b);
+		pr(b);
+		//배열값 Clear
+		cls(b);
+		
+		}
+
+	private static void cls(int[] b) {
+		for ( int i = 0 ; i < b.length ; i++) {
+			b[i] = 0;
+		}
+		
+	}
+
+	//main에서 호출하는 method는 같은 static (Must)!!
+	//자동완성 시키는게 좋다!!!
+	private static void pr(int[ ] b) {
+		for (int i = 0 ; i < b.length; i++) {
+			System.out.print(b[i] + "\t");
+		}
+		
+	}
+
+}

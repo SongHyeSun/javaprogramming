@@ -1,0 +1,27 @@
+package ch02_ex03;
+
+public class Variable05 {
+
+	public static void main(String[] args) {
+		int n1 = 90;
+		int n2 = 90;
+		int n3 = 91;
+		int sum;
+		double avg1;
+		double avg2;
+		double avg3;
+		
+		sum = n1 + n2 + n3;
+		avg1 = sum / 3;
+		//나머지가 잘려서 나온다.
+		avg2 = sum / (float) 3;    //float형을 선언
+		//float을 했더니 소숫점 1자리 나옴 왜 한자리? system out에서 .1을 해주어서
+		avg3 = (float) ( sum / 3) ;    //정수결과에 float형을 선언
+
+		System.out.printf("총점 = %d\n", sum); //println
+		System.out.printf("평균 = %.1f\n", avg1);
+		System.out.printf("평균 = %.1f\n", avg2);
+		System.out.printf("평균 = %.1f\n", avg3);
+	}
+
+}
