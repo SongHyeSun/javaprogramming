@@ -1,0 +1,14 @@
+package ch06_ex01;
+
+class Subscribe {
+	
+}
+
+public class SubscribeEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

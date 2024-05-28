@@ -22,10 +22,12 @@ public class ArrayCopy01 {
 		//배열값 Clear
 		cls(b);
 		pr(b);
+		
 		System.out.println("---------a, 0, b, 2, a.length------------");
 		//                          a 배열의 0번째가 b Index 2에 복사
 		System.arraycopy(a, 0, b, 2, a.length);
 		pr(b);
+		cls(b);
 		
 		System.out.println("---------a, 1, b, 0, a.length-1 ------------");
 		//                          a 배열의 1번째가 b Index 0 에 복사

@@ -1,0 +1,10 @@
+package ch05_ex02;
+
+public class EnumWeekEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

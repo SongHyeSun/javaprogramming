@@ -1,0 +1,45 @@
+package ch06_ex01;
+
+class Account {
+	String account;    //계좌번호
+	String name;	   // 계좌주
+	int    balance;    //잔액
+	
+	public Account (Strina acc, String n, int bal) {
+		account = acc;
+		name = n;
+		balance = bal;
+	}
+	// 예금
+	void deposit(int amt) {
+		balance += amt;
+		System.out.println(amt + "가 예금...");
+	}
+	//인출
+	void withdraw (int amt) {
+		 if ( balance < amt) {
+			 System.out.println(amt+"가 출금시도.");
+			 System.out.println(name + " 잔고 부족  ");
+		 } else {
+			 balance -= amt;
+			 System.out.println(amt + "가 출금...");
+			 
+		 }
+	}
+	//계좌 잔액 조회
+	void preBalance () {
+		System.out.println(name + " 현재 잔액은 "+ balance);
+	}
+	
+}
+
+public class AccountEx {
+
+	public static void main(String[] args) {
+		//Account Instance ac1, ac2생성
+		//ac1->신한1, 이성계, 1500
+		//ac2->국민2, 강감찬, 7000
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package ch06_ex01;
+
+//HW01
+
+class Person {
+	String name;
+	int age;
+	String gender;
+	void print() {
+		System.out.println("이름: "+ name+" 나이 : "+age + " 성별 : "+gender);
+	}
+}
+
+public class PersonEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

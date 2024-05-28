@@ -1,0 +1,26 @@
+package ch06_ex01;
+
+class Card {
+	//인스턴스 변수 = 필드
+	String kind ;
+	int number;
+	
+	//클래스 변수
+	static int width = 100; 
+	static int height = 250;
+}
+
+public class CardTest01 {
+
+	public static void main(String[] args) {
+		// 객체1 생성
+		Card c1 = new Card();	
+		//인스턴스 변수
+		c1.kind = "Heart";		
+		c1.number = 7;
+		System.out.print(" c1 : "+c1.kind + "," + c1.number);
+		System.out.print("\n c1 : "+Card.width+ "," + Card.height);
+		//c1으로 써도되고, Card로 써도 된다.
+	}
+
+}
