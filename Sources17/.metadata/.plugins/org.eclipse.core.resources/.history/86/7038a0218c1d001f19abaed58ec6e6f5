@@ -1,0 +1,5 @@
+package ch08_ex01;
+
+public interface Lenderable {
+
+}

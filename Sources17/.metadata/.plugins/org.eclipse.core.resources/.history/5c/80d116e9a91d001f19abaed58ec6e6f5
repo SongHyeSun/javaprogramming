@@ -1,0 +1,20 @@
+package ch07_ex01;
+
+//Hw02
+class OverLoad {
+	
+}
+
+public class OverLoadingEx {
+
+	public static void main(String[] args) {
+		OverLoad ol = new OverLoad();
+		ol.print();
+		ol.print(12);
+		ol.print("대박");
+		ol.print("금요일", 16)
+		
+
+	}
+
+}

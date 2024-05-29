@@ -1,0 +1,14 @@
+package ch08_ex01;
+
+public interface Lenderable {
+	int BORROW = 1;
+	int NORMAL = 0;
+	void checkOut (String borrower, String date);
+	void checkin ();
+}
+
+class SeperateVolume implements Lenderable {
+	String title;
+	String date;
+	
+}

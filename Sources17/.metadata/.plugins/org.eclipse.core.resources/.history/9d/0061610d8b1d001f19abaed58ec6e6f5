@@ -1,0 +1,26 @@
+package ch08_ex01;
+
+//추상class
+abstract class C1 {
+	int k;
+	public C1() {
+		System.out.println("추상Class 생성자 ");
+	}
+	void setK(int K) {
+		this.k = k;
+	}
+	abstract void print();
+}
+
+class C2 extends C1 {
+	
+}
+
+public class OverRide03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

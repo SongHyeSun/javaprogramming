@@ -1,0 +1,10 @@
+package ch07_ex01;
+
+public class DataEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

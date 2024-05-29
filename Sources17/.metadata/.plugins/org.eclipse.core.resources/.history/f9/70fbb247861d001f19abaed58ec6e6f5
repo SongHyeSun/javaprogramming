@@ -1,0 +1,28 @@
+package ch08_ex01;
+
+class A1 {
+	public void print () {
+		System.out.println("  부모 메소드");
+	}
+}
+
+class A2 extends A1 {
+//	@Override
+//	public void print() {
+		// TODO Auto-generated method stub
+//		super.print();
+	}
+	public void print3() {
+		System.out.println("A2의 print3 메소드");
+}
+
+public class OverRide01 {
+
+	public static void main(String[] args) {
+		A1 a1 = new A1();
+		a1.print();
+		// a1.print3(); 부모는 자식꺼 쓸 수 없다. 불가능하다
+
+	}
+
+}

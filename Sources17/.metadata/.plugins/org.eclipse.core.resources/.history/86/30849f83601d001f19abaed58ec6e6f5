@@ -1,0 +1,28 @@
+package ch07_ex01;
+
+class Encapsule{
+	private String name;
+	private int    age;
+	
+	public String getName() {
+		return name;
+	}
+	public int getAge () {
+		return age;
+	}
+}
+
+
+public class EncapsuleEx {
+
+	public static void main(String[] args) {
+		Encapsule h1 = new Encapsule();
+		h1.name = "김준수";
+		h1.age = -10;
+		
+		System.out.println("이름 : " + h1.getName());
+		System.out.println("나이 : " + h1.getAge());
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package ch07_ex01;
+
+class StaticM {
+	int num = p;
+	
+	void display () {
+		num++;
+		System.out.println("메롱 num-> "+num);
+
+	}
+	static void print (String str) { 	//static 선언
+	//	num ++;
+		System.out.println("대박 수요일"+str);
+	}
+}
+
+public class StaticMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

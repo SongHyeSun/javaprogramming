@@ -1,0 +1,45 @@
+package ch07_ex02;
+
+public class Student {
+	public String name;
+	private int    age;		//BR 0~100
+	private String sno;		//BR 10000~99999
+							//business rule
+	// 읽을 수 있는 함수와 쓸 수 있는 함수가 있어야 한다.
+
+	public void printAll () {
+		System.out.println("이름: "+ name + " , 나이 : "+ age+ " 학번 : " + sno);
+
+	}
+
+	//저장할 때 setter를, 읽을 때 getter를 !
+	//Setter를 잘 관리해야한다.
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getSno() {
+		return sno;
+	}
+
+	public void setSno(String sno) {
+		this.sno = sno;
+		//if(sno > 10000 && sno < 99999)
+		//Business Rule  설정
+		//	this.sno = sno;
+		//else
+	}
+
+}

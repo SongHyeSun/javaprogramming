@@ -9,7 +9,8 @@ public class Car3 {
 	final int AMTPERTIME = 3000;
 	//final 함수는 대문자로 이름 생성해야한다!!!
 	
-	public Car3 () {}
+	public Car3 () {
+	}
 	//위는 기본생성자! (car1 ctrl space)
 	//기본생성자의 목적: 메모리만 갖는 것
 	

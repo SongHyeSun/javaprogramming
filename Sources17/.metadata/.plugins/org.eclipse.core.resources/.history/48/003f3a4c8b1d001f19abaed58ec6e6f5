@@ -1,0 +1,44 @@
+package ch08_ex01;
+
+//추상class
+abstract class C1 {
+	int k;
+	public C1() {
+		System.out.println("추상Class 생성자 ");
+	}
+	//k에 대한 settermethod
+	void setK(int k) {
+		this.k = k;
+	}
+	//하나 이상의 추상 method가 존재 해야 함
+	//method 정의만 존재하는 것을 추상 method라고 함
+	//실제로 구현한 것이 아니다.
+	abstract void print();
+}
+
+class C2 extends C1 {
+
+	@Override
+	void print() {
+		System.out.println("C2 k ->"+k);
+		
+	}
+	
+}
+
+public class OverRide03 {
+
+	public static void main(String[] args) {
+		//추상 class는 생성 안됨 -> 하나 이상의 추상 method를 가지고 있기 때문에
+		//C1 c1 = new C1();
+		//-이와 같은 경고가 뜬다, ->Cannot instantiate the type C1\
+		//추상 class는 생성 안됨 -> 하나 이상의 추상 method를 가지고 있기 때문에
+		
+		//C1을 C2에 만들어주면, 가능하다
+		C1 c1 = new C2();
+		c1.setK(12);
+		c1.print();
+
+	}
+
+}

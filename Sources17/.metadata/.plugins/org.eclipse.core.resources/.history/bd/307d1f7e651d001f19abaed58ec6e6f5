@@ -1,0 +1,26 @@
+package ch07_ex01;
+
+class Fac1 {
+	int result = 1;
+	//재귀함수 -> 자기 자신을 재 호출하는 함수 (자료구조형에서 많이 쓰인다.)
+	void factorial (int cnt) {
+		if ( cnt > 1) {
+			result *=cnt;
+			System.out.print( cnt + " * ");
+			factorial(--cnt);
+		} else {
+			System.out.println( cnt   );
+				System.out.println("Factorial 결과는  "+ result);
+				return;
+		}
+	}
+}
+
+public class FactorialEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

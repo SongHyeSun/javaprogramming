@@ -1,0 +1,35 @@
+package ch07_ex01;
+
+class StaticM {
+	int num = 0;
+	
+	void display () {
+		num++;
+		System.out.println("메롱 num-> "+num);
+
+	}
+	static void print (String str) { 	//static 선언
+	//	num ++;
+		System.out.println("대박 수요일"+str);
+		// System.out.println("num->"+num);
+		//static은 공유변수이기 때문에, 인스턴스값이 들어가면 이상해진다.
+		//static method는 static 변수만 사용 가능!
+	}
+}
+
+public class StaticMethod {
+
+	public static void main(String[] args) {
+		//static 선언 시 객체 생성 없이 호출 가능
+		StaticM.print(" 인스턴스 전");
+		//공유변수일 때 이렇게 쓸 수 있다.
+		StaticM sm = new StaticM();
+		
+		sm.display();
+		sm.display();
+		sm.display();
+		sm.print(" 인스턴스 후");
+
+	}
+
+}

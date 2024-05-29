@@ -1,0 +1,23 @@
+package ch07_ex01;
+
+//Call By Value && Call By Reference  ---> 면접 ***
+
+class Data {
+	int kor;
+	int eng;
+	int math;
+	//Call by Reference
+	void add (Data d1, Data d2) {
+		d1.kor = d2.eng;
+		System.out.println("Method국어 점수 : " + d1.kor);
+	}
+}
+
+public class DataEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
