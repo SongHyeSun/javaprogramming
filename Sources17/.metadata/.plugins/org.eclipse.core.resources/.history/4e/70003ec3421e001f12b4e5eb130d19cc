@@ -1,0 +1,22 @@
+package ch08_ex01;
+
+public class RobotEx {
+	
+	static void action (Robot r) {
+		if (r instanceof DanseRobot) {
+			((DanseRobot)r).dance();
+		} else if (r instanceof DrawRobot) {
+			((DrawRobot)r).draw();
+		} else {
+//			((SingRobot)r).sing();
+			SingRobot sr = (SingRobot) r;
+			sr.sing();
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

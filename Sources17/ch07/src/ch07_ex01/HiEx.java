@@ -4,10 +4,10 @@ package ch07_ex01;
 class D1  {
 	
 	void hi (int cnt) {
-		if (cnt >=0) {
-			System.out.println("안녕, 나야!! cnt-->"+cnt);
-			hi(--cnt);
-		}
+		System.out.println("안녕, 나야!! cnt-->"+cnt);
+		if (cnt <1) return;
+		hi(--cnt);
+		
 	}
 }
 

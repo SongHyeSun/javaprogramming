@@ -1,0 +1,11 @@
+package ch08_robot.actions;
+
+public class KnifeWithWood implements KnifeAction {
+
+	@Override
+	public void knife() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -14,6 +14,7 @@ abstract class C1 {
 	//method 정의만 존재하는 것을 추상 method라고 함
 	//실제로 구현한 것이 아니다.
 	abstract void print();
+	//templete 패턴
 }
 
 class C2 extends C1 {

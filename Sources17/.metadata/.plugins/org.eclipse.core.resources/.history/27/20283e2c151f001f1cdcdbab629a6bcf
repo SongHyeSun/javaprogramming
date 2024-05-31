@@ -1,0 +1,16 @@
+package ch08_robot;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		System.out.println("SuperRobot주문. 만들어 주세요.");
+		Robot superRobot = new SuperRobot();
+		//su + Ctrl space
+		superRobot.shape();
+		superRobot.actionBasic();
+		superRobot.actionFly();
+		superRobot.actionFire();
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package ch08_ex02;
+
+public class Super02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

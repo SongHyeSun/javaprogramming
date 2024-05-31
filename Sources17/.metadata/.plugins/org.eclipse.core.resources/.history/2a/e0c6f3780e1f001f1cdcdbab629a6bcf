@@ -1,0 +1,11 @@
+package ch08_robot.actions;
+
+public class FireOk implements FireAction {
+
+	@Override
+	public void fire() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

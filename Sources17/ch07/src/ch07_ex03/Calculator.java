@@ -5,12 +5,13 @@ public class Calculator {
 		System.out.println("전원을 켭니다.");
 	}
 	int plus (int x, int y) {
-		int result1 = x+y;
-		return result1;
+		int result = x+y;
+		return result;
+		//여기서 지정해주는 변수 명은 결과값의 변수명과는 상관이 없다.
 	}
 	double divide (int x, int y) {
-		double result2 = (double) x/y;
-		return result2;
+		double result = (double) x/(double)y;
+		return result;
 	}
 	void powerOff () {
 		System.out.println("전원을 끕니다.");

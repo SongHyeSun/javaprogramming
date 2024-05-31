@@ -3,10 +3,13 @@ package ch08_ex01;
 public interface Lenderable {
 	int BORROW = 1;
 	int NORMAL = 0;
-	void checkOut (String borrower, String date);
+	abstract void checkOut (String borrower, String date);
+	//interface 자체가 abstract인데, 써도 상관없다는 것을 보여주기 위해서
 	void checkin ();
 }
 
+//extend는 추상화 된 것을 하나도 구현하지 않을 수도 있고 구현할 수도 있다.
+//implements는 multiple inheritance가 가능하다
 class SeperateVolume implements Lenderable {
 	String title;
 	String date;
@@ -16,7 +19,15 @@ class SeperateVolume implements Lenderable {
 	SeperateVolume(String title) {
 		this.title = title;
 	}
+	//메모리와 title을 초기화 시켜주겠다.
+	//void임에도 void라고 할 수 없음
+	
+	//책 대여 method  --> 상태가 NORMAL일때만
 	public void checkOut (String borrower, String date) {
+		//1과 0으로 표기해도 되지만, 더 잘 볼 수 있도록 정해준 것 (개발자들끼리)
+		//NORMAL ++;
+		//interface 변수는 다 상수이다. 무조건
+		//interface method는 다 abstract method이다! 무조건
 		if (status !=NORMAL) return;
 		this.date = date;
 		this.borrower = borrower;
@@ -25,6 +36,8 @@ class SeperateVolume implements Lenderable {
 		System.out.println(borrower + "가" + date + "일에" + title + "을 대여했다.");
 	}
 	
+	//책 반환 ---> 상태가 BORROW여야만
+	@Override
 	public void checkin() {
 		if (status != BORROW) return;
 		System.out.println(borrower + "가" + title +"을 반납했다");
@@ -32,6 +45,7 @@ class SeperateVolume implements Lenderable {
 		title = null;
 		borrower = null;
 		status = NORMAL;
+		//모든 값을 초기화 시켜주고 상태값을 normal로 하겠다.
 		
 	}
 }

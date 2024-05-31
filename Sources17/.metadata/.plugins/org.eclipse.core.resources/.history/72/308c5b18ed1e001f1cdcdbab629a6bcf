@@ -1,0 +1,10 @@
+package ch08_ex03;
+
+public class DmbCellPhone extends Cellphone {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

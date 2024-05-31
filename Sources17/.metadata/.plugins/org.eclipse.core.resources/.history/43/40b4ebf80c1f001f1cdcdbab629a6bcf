@@ -1,0 +1,17 @@
+package ch08_ex07;
+
+public class RemoteControlEx {
+
+	public static void main(String[] args) {
+		RemoteControl rc = null;
+		//객체를 선언만 해준 것, sub 개체를 넣을 수 있다.
+		
+		rc = new Television();
+		rc.turnOn();
+		rc.turnOff();
+		rc.setVolume(5);
+		rc.setVolume(15);
+
+	}
+
+}

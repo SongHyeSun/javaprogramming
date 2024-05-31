@@ -1,0 +1,26 @@
+package ch08_ex02;
+
+public class Car {
+	
+	String kind;
+	Engine eg;
+	
+	public Car(String kind, Engine eg) {
+		this.kind = kind;
+		this.eg = eg;
+	}
+	
+	void print () {
+		System.out.println("종류 : "+kind);
+		eg.print();
+		System.out.println("=================");
+	}
+
+	public static void main(String[] args) {
+		Engine eg1 = new Engine("알파엔진", 2000);
+		Engine eg2 = new Engine("베타엔진", 3000);
+		
+
+	}
+
+}

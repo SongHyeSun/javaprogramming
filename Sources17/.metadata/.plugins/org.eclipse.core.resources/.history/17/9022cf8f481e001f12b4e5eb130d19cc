@@ -1,0 +1,37 @@
+package ch08_ex02;
+
+class S1 {
+	int a = 7;
+	int b = 7;
+	void display () {
+		System.out.println("B1 대박");
+	}
+	void print() {
+		System.out.println("B1 난 부모 print 메소드");
+	}
+		
+	
+}
+
+class S2 extends S1 {
+	int a = 10;
+	void print () {
+		super.print();	//부모 method 찾는다.
+		System.out.println("B2 부모 멤버          a = " +super.a);
+		System.out.println("B2 난 자식 메소드       a = " +a);
+		System.out.println("B2 난 자식 메소드       b = " +b);
+		System.out.println("===========================");
+	}
+}
+
+//super class랑 동일한 변수 a와 method print() 를 가지고 있음
+
+public class Super01 {
+
+	public static void main(String[] args) {
+		S2 b = new S2();
+		b.print();
+		b.display();
+	}
+
+}

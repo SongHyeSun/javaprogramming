@@ -13,6 +13,7 @@ class Data {
 		System.out.println("Method국어 점수 : " + d1.kor);
 	}
 	
+	//call by value
 //  Return Type    return Method    parameter
 	int            addKor           (int kor) {
 		System.out.println("kor계산 이전-> " +kor);
@@ -33,20 +34,23 @@ public class DataEx {
 		 Data d1 = new Data();
 		 Data d2 = new Data();
 		 Data d3 = new Data();
-		 int d3_kor = d3.addKor(10);
 		 //d3_kor는 새로운 int 변수이다. 거기에 d3값을 대입
 		 //int d3_kor가 10에서 20으로 된 것이다.
-		 System.out.println("d3_kor->"+d3_kor);
 		 d1.kor = 50;
 		 d1.math = 70;
 		 d2.eng = 80;
 		 // *** Instance를 넘겨주면 주소값을 넘겨주는 효과 (메모리 주소번지를 넘겨준다.)
 		 //객체를 통째로 넘겨줄 때
 		 d3.addRef(d1, d2);
+		 System.out.println("Main 국어 점수: "+ d1.kor);
+		 //call by reference call
 		 //주석값(reference)을 넘겨주었기 때문에, 메모리에 저장되어서 나온다. Array, String등 다 객체
 		 //주석값을 넘겨주는 것은 void를 사용해도 된다.
 		 //int로 보내주면 하나밖에 못가져온다.
-		 System.out.println("Main 국어 점수: "+ d1.kor);
+		 int d3_kor = d3.addKor(10);
+		 System.out.println("d3_kor->"+d3_kor);
+		 System.out.println("d3_kor->"+ d3.kor);
+		 //call by value call
 
 	}
 

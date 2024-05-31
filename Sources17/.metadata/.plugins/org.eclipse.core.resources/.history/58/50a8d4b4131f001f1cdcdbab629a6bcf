@@ -1,0 +1,11 @@
+package ch08_robot;
+
+public class SuperRobot extends Robot {
+
+	@Override
+	public void shape() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package ch08_ex01;
+
+public interface Volume {
+	void volumeUp();
+	void VolumeDown();
+
+}
+class TV {
+	
+}
+class Audio {
+	
+}
+class Speaker {
+	
+}

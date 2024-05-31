@@ -1,0 +1,40 @@
+package ch08_ex01;
+
+public abstract class Shape {
+	int a  = 3;
+	abstract void draw ();
+	void print () {
+		System.out.println("------선과 점으로 구성됐다.-------");
+		
+	}
+
+}
+
+//HW01
+class Rectangle extends Shape {
+
+	@Override
+	void draw() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+class Triangle extends Shape{
+
+	@Override
+	void draw() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+class Circle extends Shape {
+
+	@Override
+	void draw() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

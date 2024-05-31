@@ -1,0 +1,24 @@
+package ch08_ex02;
+
+public class Car {
+	
+	String kind;
+	Engine eg;
+	
+	public Car(String kind, Engine eg) {
+		this.kind = kind;
+		this.eg = eg;
+	}
+	
+	void print () {
+		System.out.println("종류 : "+kind);
+		eg.print();
+		System.out.println("=================");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

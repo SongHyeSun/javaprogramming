@@ -1,0 +1,10 @@
+package ch08_ex05;
+
+public class Person2Ex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

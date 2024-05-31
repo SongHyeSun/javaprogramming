@@ -1,0 +1,31 @@
+package ch07_ex01;
+
+class C1r {
+	int x;
+	int y;
+	
+	void divide1(C1r r1, C1r r2) {
+
+	}
+}
+
+public class Return01_ref {
+
+	public static void main(String[] args) {
+		int resultDivide1;
+		int resultDivide2;
+		int resultDivide3;
+		C1 c = new C1();
+		c.divide1(13, 3);		
+		
+		resultDivide1 = c.divide2(13, 3);
+		resultDivide2 = c.divide2(23, 3);
+		resultDivide3 = c.divide2(33, 3);
+		int total = resultDivide1 + resultDivide2 + resultDivide3;
+		System.out.println("Main resultDivide Total-> "+total);
+		//void의 call by reference를 쓰던지, return받은 값을 쓰던지
+		//이렇게 사용하면 main에서도 작업을 가져갈 수 있다.
+
+	}
+
+}

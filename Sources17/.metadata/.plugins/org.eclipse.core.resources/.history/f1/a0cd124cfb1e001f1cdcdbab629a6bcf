@@ -1,0 +1,11 @@
+package ch08_ex05;
+
+public class Manager2 extends Person2 {
+	private String part;
+
+	Manager2(String name, int age, String part) {
+		super(name, age);
+		this.part = part;
+	}
+
+}
