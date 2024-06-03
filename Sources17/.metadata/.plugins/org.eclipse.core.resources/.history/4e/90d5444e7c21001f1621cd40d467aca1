@@ -1,0 +1,14 @@
+package ch09_ex03;
+
+public class System1 {
+
+	public static void main(String[] args) {
+		//getenv -> 시스템에 있는 환경을 의미
+		String path = System.getenv("path");
+		String java_home = System.getenv("JAVA_HOME");
+		System.out.println(path);
+		System.out.println(java_home);
+
+	}
+
+}

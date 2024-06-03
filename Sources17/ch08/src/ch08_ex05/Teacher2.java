@@ -6,6 +6,8 @@ public class Teacher2 extends Person2 {
 	Teacher2(String name, int age, String subject) {
 		super(name, age);
 		this.subject = subject;
+		//무조건 super부터 정의해야된다.
+		//super가 밑으로 오면 오류가 뜬다.
 	}
 	
 	public void print () {

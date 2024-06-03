@@ -7,12 +7,12 @@ public interface RemoteControl {
 	
 	//추상 메소드
 	void turnOn();
-	void turnOff();  //-> 바로 정의할 수 없다-> abstract이어서 {}를 할 수 없다는 뜻
+	void turnOff(); 				 //-> 바로 정의할 수 없다-> abstract이어서 {}를 할 수 없다는 뜻
 	void setVolume(int volume);
 	
 	//interface method 변수는 상수, method는 추상메소드
 	
-	// +
+//     +
 	
 	//단, JAVA 8 이상
 //	----------------------------------------------------

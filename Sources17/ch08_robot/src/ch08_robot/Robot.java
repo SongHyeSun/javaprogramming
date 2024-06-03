@@ -32,8 +32,9 @@ public abstract class Robot {
 	}
 	
 	public void actionBasic () {
-		System.out.println("팔, 다리, 머리, 몸통이 있죠.");
+		System.out.println("Robot 팔, 다리, 머리, 몸통이 있죠.");
 	}
+	
 	// 필요 시 setter만 만들 수 있다.  (source 자동완성 set, get전부가 아니라 set만!)
 
 	public void setFlyAction(FlyAction flyAction) {
@@ -43,5 +44,11 @@ public abstract class Robot {
 	public void setFireAction(FireAction fireAction) {
 		this.fireAction = fireAction;
 	}
+
+	public void setKnifeAction(KnifeAction knifeAction) {
+		this.knifeAction = knifeAction;
+	}
+	
+	
 
 }

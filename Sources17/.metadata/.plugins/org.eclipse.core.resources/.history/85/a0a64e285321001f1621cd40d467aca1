@@ -1,0 +1,22 @@
+package ch09_ex01;
+
+import java.util.Calendar;
+
+public class Calen1 {
+
+	public static void main(String[] args) {
+		//new 선언해서 객체 없는 것들은 .하고 getInstance
+		Calendar cal = Calendar.getInstance();
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		int date = cal.get(Calendar.DATE);
+		//-> object가 가지고 있는 아버지의 mehtod일 수도 있다.
+		//API 중에 잘 쓰는 것만 익혀두자!! 잘 안쓰는 것들은 googling  해주면 된다.
+		//이미 만들어져있는 것을 사용법을 익혀서 적용하라  -> API
+		//API: Application programming interface  -> 어플 개발에 어떻게 인터페이스를 가져다 쓸것인지
+		
+		System.out.printf("오늘은 %d년 %d월 %d일 입니다 \n", year, month, date);
+		
+	}
+
+}

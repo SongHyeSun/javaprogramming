@@ -7,6 +7,7 @@ import ch08_robot.actions.KnifeWithLazer;
 
 public class SuperRobot extends Robot {
 
+	//부품은 CheapRobot, StandardRobot, SuperRobot의 생성자에서 결정되어진다.
 	public SuperRobot() {
 		flyAction = new FlyOk();
 		fireAction = new FireOk();  

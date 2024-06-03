@@ -1,0 +1,15 @@
+package ch09_ex01;
+
+import java.util.Calendar;
+
+public class Calen1 {
+
+	public static void main(String[] args) {
+		//new 선언해서 객체 없는 것들은 .하고 getInstance
+		Calendar cal = Calendar.getInstance();
+		cal.
+		//-> object가 가지고 있는 아버지의 mehtod일 수도 있다.
+		
+	}
+
+}

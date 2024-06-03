@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=ch08/src&lt;ch08_ex03{Cellphone.java[Cellphone" modifiers="1" timestamp="1717118564823"/>
-    <typeInfo handle="=ch08/src&lt;ch08_ex04{Tire.java[Tire" modifiers="1" timestamp="1717119712830"/>
+    <typeInfo handle="=ch08/src&lt;ch08_ex04{Tire.java[Tire" modifiers="1" timestamp="1717122576345"/>
     <typeInfo handle="=ch08/src&lt;ch08_ex05{Person2.java[Person2" modifiers="1" timestamp="1717123339768"/>
     <typeInfo handle="=ch08/src&lt;ch08_ex06{DataAccessObject.java[DataAccessObject" modifiers="513" timestamp="1717125647534"/>
     <typeInfo handle="=ch08/C:\/Program Files\/Java\/jdk-17\/lib\/jrt-fs.jar`java.rmi=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.rmi(Remote.class[Remote" modifiers="1537" timestamp="1716268816999"/>
-    <typeInfo handle="=ch08/src&lt;ch08_ex07{RemoteControl.java[RemoteControl" modifiers="513" timestamp="1717127288066"/>
+    <typeInfo handle="=ch08/src&lt;ch08_ex07{RemoteControl.java[RemoteControl" modifiers="513" timestamp="1717144601842"/>
     <typeInfo handle="=ch08_robot/src&lt;ch08_robot.actions{FireAction.java[FireAction" modifiers="513" timestamp="1717133143554"/>
     <typeInfo handle="=ch08_robot/src&lt;ch08_robot.actions{FlyAction.java[FlyAction" modifiers="513" timestamp="1717133144602"/>
-    <typeInfo handle="=ch08_robot/src&lt;ch08_robot{Robot.java[Robot" modifiers="1025" timestamp="1717133789708"/>
+    <typeInfo handle="=ch08_robot/src&lt;ch08_robot{Robot.java[Robot" modifiers="1025" timestamp="1717137263554"/>
     <typeInfo handle="=ch08_robot/src&lt;ch08_robot.actions{KnifeAction.java[KnifeAction" modifiers="513" timestamp="1717133141688"/>
 </typeInfoHistroy>

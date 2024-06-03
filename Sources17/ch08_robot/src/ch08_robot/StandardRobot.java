@@ -6,6 +6,7 @@ import ch08_robot.actions.KnifeWithWood;
 
 public class StandardRobot extends Robot {
 	
+	//부품은 CheapRobot, StandardRobot, SuperRobot의 생성자에서 결정되어진다.
 	public StandardRobot() {
 		flyAction = new FlyNo();
 		fireAction = new FireOk();

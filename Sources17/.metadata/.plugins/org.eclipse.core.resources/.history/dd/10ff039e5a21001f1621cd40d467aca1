@@ -1,0 +1,20 @@
+package ch09_ex01;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+//class가 다르고 package가 같다라고 하면,  (위와 같은 상황)
+//import java.time.*; -> 이렇게 표시해주면 된다.
+
+public class DateTimeCreateEx {
+
+	public static void main(String[] args) {
+		//시간 얻기
+		LocalDate currDate = LocalDate.now();
+		System.out.println("현재 날짜: " + currDate);
+		LocalDate targetDate = LocalDate.of(2024, 11, 18);
+		System.out.println("목표 날짜: " + targetDate + "\n");
+		//시간 얻기
+		LocalTime
+	}
+
+}

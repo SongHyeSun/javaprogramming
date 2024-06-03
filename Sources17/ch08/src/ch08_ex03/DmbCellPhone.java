@@ -12,8 +12,14 @@ public class DmbCellPhone extends Cellphone {
 	}
 	//메소드
 	
+//	@Override
+//	void powerOn() {
+//		// TODO Auto-generated method stub
+//		super.powerOn();
+//	}
+//	
 	void turnOnDmb() {
-		System.out.println("채널 10번 DMB 방송 수신을 시작합니다.");
+		System.out.println("채널 " + channel +"번 DMB 방송 수신을 시작합니다.");
 	}
 	void changeChannelDmb (int channel) {
 		System.out.println("채널 "+channel + "번으로 바꿉니다.");

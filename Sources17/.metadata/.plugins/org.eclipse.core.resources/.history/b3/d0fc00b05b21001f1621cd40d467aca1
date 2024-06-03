@@ -1,0 +1,14 @@
+package ch09_ex01;
+
+import java.time.LocalDateTime;
+
+public class DateTimeOperationEx {
+
+	public static void main(String[] args) {
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println("현재시: "+ now);
+		LocalDateTime targetDateTime = L
+
+	}
+
+}

@@ -29,6 +29,10 @@ public class Person2 {
 	}
 
 	public void setAge(int age) {
+		if (age < 10) {
+			System.out.println("좀 크면 오세요");
+			return;
+		}
 		this.age = age;
 	}
 

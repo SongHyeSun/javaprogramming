@@ -1,0 +1,12 @@
+package ch09_ex01;
+
+import java.time.LocalDate;
+
+public class DateTimeCreateEx {
+
+	public static void main(String[] args) {
+		LocalDate currDate = LocalDate.now();
+		System.out.println("현재 날짜: " + currDate);
+	}
+
+}

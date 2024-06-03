@@ -1,6 +1,6 @@
 package ch08_ex05;
 
-//부모 rv = new 자식(); up casting OK
+//부모 rv(객체) = new 자식(); up casting OK
 //부모 method()와 자식 method() 이름을 같을 때는  자식 메소드 실행
 //부모의 멤버변수와 자식의 멤버변수가 이름이  같을 때는 부모 멤버변수 실행
 //
