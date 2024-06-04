@@ -1,0 +1,24 @@
+package ch11_ex02;
+
+import java.util.Stack;
+
+public class StackEx01 {
+
+	public static void main(String[] args) {
+		String[] pet = {"지렁이", "굼벵이", "애벌레", "구렁이"};
+		//stack 선언
+		Stack<String> st = new Stack<String>();
+		//			{"지렁이", "굼벵이", "애벌레", "구렁이"}
+		for (String str : pet) {
+			System.out.println("push--->"+str);
+			st.push(str);
+		}
+		System.out.println("push st->" + st);
+		System.out.println("------------------------");
+		while (!st.isEmpty()) {
+			System.out.println("POP -> " + st.pop());
+		}
+		System.out.println("st->"+st);
+	}
+
+}

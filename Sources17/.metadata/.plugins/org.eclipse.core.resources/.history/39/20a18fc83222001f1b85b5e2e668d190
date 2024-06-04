@@ -1,0 +1,11 @@
+package ch10_ex05;
+
+public class MyExceptionEx02 {
+
+	public static void main(String[] args) {
+		// Buz Rule
+		// 최소급여 100 ~ 최대급여 1,000만원
+
+	}
+
+}

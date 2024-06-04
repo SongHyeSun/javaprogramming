@@ -16,6 +16,7 @@ public class Integ1 {
 //		i1.   -> 안된다. 아무것도 안뜬다. (오직 숫자를 위한 )
 
 		System.out.println(i1 + i2);
+		//int 계산을 하겠다는거구나
 		System.out.println(str + str);
 
 	}

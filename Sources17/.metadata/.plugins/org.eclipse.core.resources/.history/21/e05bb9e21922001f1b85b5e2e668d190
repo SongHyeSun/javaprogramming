@@ -1,0 +1,21 @@
+package ch10_ex01;
+
+import java.util.Scanner;
+
+public class Exception_HW01 {
+
+	public static void main(String[] args) {
+		int result = 0;
+		int num1 = 0;
+		int num2 = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		do {
+			
+		} while (true) ;
+		System.out.println("프로그램 종료");
+		sc.close();
+
+	}
+
+}

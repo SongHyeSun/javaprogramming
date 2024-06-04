@@ -1,0 +1,5 @@
+package ch10_ex04;
+
+public class MyException extends Exception {
+
+}

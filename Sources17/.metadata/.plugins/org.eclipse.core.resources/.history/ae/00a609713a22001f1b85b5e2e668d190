@@ -1,0 +1,32 @@
+package ch11_ex01;
+
+import java.util.ArrayList;
+
+//List
+public class ArrayList02 {
+
+	public static void main(String[] args) {
+		// 중복-->0 , 순서유지
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("수박");
+		list.add("사과");
+		list.add("바나나");
+		list.add("수박");
+		list.add("대추");
+		list.add("바나나");
+		System.out.println("갯수 : "+ list.size());
+//		System.out.println("list -> "+ list);
+		//예전에는 해시코드로 나옴
+		//만일 해시코드로 나오면 toString을 상속받아서 사용!
+		devPrint (list);
+
+	}
+
+	private static void devPrint(ArrayList<String> list) {
+		for (String str : list) {
+			System.out.print(str + "\t");
+		}
+		System.out.println("\n------------------------------------------------");
+	}
+
+}

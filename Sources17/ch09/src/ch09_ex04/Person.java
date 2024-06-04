@@ -11,10 +11,19 @@ public class Person {
 		this.name = name;
 	}
 	
-	public boolean equals (Person p) {
-		boolean result = false;
-		if (id==p.id) result = true;
-		return result;
+	@Override
+	public boolean equals(Object obj) {
+		boolean b = false;
+		Person  p = null;
+		if (obj instanceof Person)		  p = (Person) obj;
+		if (obj != null && this.id==p.id) b = true;
+		return b;
 	}
+
+//		public boolean equals (Person p) {
+//		boolean result = false;
+//		if (id==p.id) result = true;
+//		return result;
+//	}
 
 }
