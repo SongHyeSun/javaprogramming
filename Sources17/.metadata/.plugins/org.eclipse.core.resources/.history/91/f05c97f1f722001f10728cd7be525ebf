@@ -1,0 +1,19 @@
+package ch11_ex01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListHw01 {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		//super에 sub를 넣어서 쓰는 경우도 있다.
+		
+		
+
+	}
+
+}
+
+//총 객체수: 5
+//List : [Java, JDBC, Database, Servlet/JSP, iBATIS]

@@ -1,0 +1,14 @@
+package ch11_ex03;
+
+import java.util.Properties;
+
+public class PropertiesEx01 {
+
+	public static void main(String[] args) {
+		Properties pt = new Properties();
+		String path = PropertiesEx01.class.getResource("database.properties").getPath();
+		System.out.println("1 path : "     + path);
+
+	}
+
+}

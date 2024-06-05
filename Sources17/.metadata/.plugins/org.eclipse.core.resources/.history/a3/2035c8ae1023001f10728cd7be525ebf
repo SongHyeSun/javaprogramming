@@ -1,0 +1,18 @@
+package ch12_ex02;
+
+public class RunnableEx02 {
+
+	public static void main(String[] args) {
+		// 1. Ra3 : Interface 상속, 20번 수행(for문)---> getName()+대박+i가 message로
+		// 2. Ra4 : Interface 상속, 20번 수행(for문)---> getName()+월요일+i가 message로
+		// 3. Th1(만들어 놓은 것) : thread 상속, 수행
+		// 3. Th2(만들어 놓은 것) : thread 상속, 수행
+		
+		
+		Ra3 r1 = new Ra3();
+		Ra4 r2 = new Ra4();
+		Th1 th3 = new Th2("zz");
+		Th2 th4 = new Th2("oo");
+	}
+
+}

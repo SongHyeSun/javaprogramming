@@ -1,0 +1,13 @@
+package ch12_ex01;
+
+public class ThreadEx04_Hw02 {
+
+	public static void main(String[] args) {
+		//Hw02
+		//20번씩 수행
+		//Th3 -> 10 / 1000 쉼
+		//Th3 -> 20 / 1000 쉼
+
+	}
+
+}

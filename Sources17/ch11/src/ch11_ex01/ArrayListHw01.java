@@ -1,0 +1,45 @@
+package ch11_ex01;
+
+import java.io.ObjectInputStream.GetField;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListHw01 {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		//super에 sub를 넣어서 쓰는 경우도 있다.
+		list.add("Java");
+		list.add("JDBC");
+		list.add("Database");
+		list.add("Serblet/JSP");
+		list.add("iBATIS");
+		
+		int size = list.size();
+		System.out.println("총 객체수 : " + size);
+		System.out.println("List : " +list);
+		
+		// 2번째 Index 가져와 출력
+		System.out.println("2: "+ list.get(2));
+		System.out.println();
+
+		// Database, Servlet/JSP, iBATIS 삭제
+		// for문이용 남은 원소 조회
+		list.remove(2);
+		list.remove(2);
+		list.remove(2);
+		
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(i+": "+list.get(i));
+		}
+		
+	}
+	
+}
+
+//총 객체수: 5
+//List : [Java, JDBC, Database, Servlet/JSP, iBATIS]
+//2: Database
+//
+//0:Java
+//1:JDBC

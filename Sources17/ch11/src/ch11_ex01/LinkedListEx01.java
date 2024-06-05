@@ -11,7 +11,7 @@ public class LinkedListEx01 {
 		for (int i = 0; i < animal.length; i++) {
 			kk.add(animal[i]);
 		}
-		System.out.println("kk->"+kk);
+		System.out.println("kk 1->"+kk);
 		
 		//고수들이 하는 방법
 		int i = 0;
@@ -20,7 +20,7 @@ public class LinkedListEx01 {
 			System.out.println(i+"->"+it.next());
 			i++;
 		}
-		
+		System.out.println("kk 2->"+kk);
 		//일반적인 방법
 		System.out.println("----------------Simple------------");
 		
@@ -29,6 +29,7 @@ public class LinkedListEx01 {
 			System.out.println(i+"->"+kk.poll());
 			i++;
 		}
+		System.out.println("kk 3->"+kk);
 
 	}
 

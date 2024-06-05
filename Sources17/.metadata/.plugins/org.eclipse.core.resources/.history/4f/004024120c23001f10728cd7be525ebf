@@ -1,0 +1,10 @@
+package ch12_ex02;
+
+public class RunnableEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

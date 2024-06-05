@@ -1,0 +1,53 @@
+package ch10_ex01;
+
+import java.util.Scanner;
+
+public class Exception_HW01 {
+
+	public static void main(String[] args) {
+		int result = 0;
+		int num1   = 0;
+		int num2   = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		do {
+			try {
+				System.out.println("첫번째 숫자 입력하세요");
+				num1 = Integer.parseInt(sc.nextLine());
+				if (num1==0) break;
+				System.out.println("두번째 숫자 입력하세요");
+				num2 = Integer.parseInt(sc.nextLine());
+					result = num1 / num2;
+					System.out.printf("%d / %d = %d\n", num1, num2, num1/num2);
+			} catch (NumberFormatException e) {
+				System.out.println("숫자만 가능 합니다 ㅎㅎㅎ");
+			} catch (ArithmeticException e) {
+				System.out.println("나머지 Error");
+			} catch (Exception e) {
+				//exception이 부모 객체라서 위에 오면 처리가 안된다.
+				System.out.println("값을 잘못 입력했습니다.");
+			} finally {
+				System.out.println( "나는 무조건 나온다");
+			}
+			
+		} while (true) ;
+		System.out.println("프로그램 종료");
+		sc.close();
+
+	}
+
+}
+
+//첫번째 숫자 입력하세요
+//aa
+//나머지 Error
+//난 무조건 나온다
+//프로그램 종료
+
+//첫번째 숫자 입력하세요
+//12
+//두번째 숫자 입력하세요
+//0
+//숫자만  가능 합니다 ㅎㅎ 
+//난 무조건 나온다
+//첫번째 숫자 입력하세요

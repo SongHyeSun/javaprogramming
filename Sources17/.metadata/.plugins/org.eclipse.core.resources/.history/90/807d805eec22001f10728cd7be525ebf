@@ -1,0 +1,23 @@
+package ch11_ex03;
+
+import java.io.FileReader;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.util.Properties;
+
+public class PropertiesEx01 {
+
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		Properties pt = new Properties();
+		String path = PropertiesEx01.class.getResource("database.properties").getPath();
+		System.out.println("1 path : "     + path);
+		path = URLDecoder.decode(path, "utf-8");
+		System.out.println("2 path : "     + path);
+		pt.load(new FileReader(path));
+		//path가 아래 console에 보여주고 있는
+		///C:/Java%20Programming/Sources17/ch11/bin/ch11_ex03/database.properties
+
+
+	}
+
+}

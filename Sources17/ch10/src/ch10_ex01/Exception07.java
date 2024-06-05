@@ -16,7 +16,7 @@ public class Exception07 {
 		} catch (ClassNotFoundException e) {
 			System.out.println("클래스를 찾을 수 없습니다.");
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("e.getMessage()->"+e.getMessage());
 		} finally {
 			//finally는 반드시 가준다!
 			System.out.println("시스템 종료.");

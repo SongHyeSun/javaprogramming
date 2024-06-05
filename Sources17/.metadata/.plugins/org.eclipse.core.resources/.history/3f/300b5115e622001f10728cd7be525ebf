@@ -1,0 +1,30 @@
+package ch11_ex03;
+
+import java.util.HashMap;
+
+public class HashMapEx01 {
+
+	public static void main(String[] args) {
+		//		Key		Value
+		// 1. Key 중복 허용X
+		// 2. Value 중복 허용 O
+		HashMap<String, String> hm01 = new HashMap<String, String>();
+		hm01.put("이승우", "010-2222-3333");
+		hm01.put("손흥민", "010-3333-3333");
+		hm01.put("전지현", "010-4455-3333");
+		hm01.put("전지현", "010-4455-3456");
+		hm01.put("전지현3", "010-4455-3456");
+		//key와 value를 통째로 저장
+		
+		//key를 꽂으니 전화번호가 나온다
+		System.out.println("이승우 TEL : "+hm01.get("이승우"));
+		System.out.println("손흥민 TEL : "+hm01.get("손흥민"));
+		System.out.println("전지현 TEL : "+hm01.get("전지현"));
+		System.out.println("전지현3 TEL : "+hm01.get("전지현3"));
+		//key가 같고 value가 다르면 마지막 값을 엎어치고 유일한 값으로 갖는다.
+		//key가 다르고 value가 같으면, 따로 입력해주어야하고, key를 다르게 입력해주면
+		//value가 중복되도 값이 나온다.
+
+	}
+
+}

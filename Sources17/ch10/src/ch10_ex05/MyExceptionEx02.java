@@ -10,9 +10,10 @@ public class MyExceptionEx02 {
 		try {
 			int kkk = Integer.parseInt(args[0]);
 			//int kkk가... 꼭... try문 안으로 들어와야된다.
+			//try밖에 두면 catch를 할 수 없다!
 			if (kkk <100) throw new MyException0201();
-			else if (kkk > 1000) throw new MyException0202();
-			else System.out.println("정상 실행.");
+			if (kkk > 1000) throw new MyException0202();
+			System.out.println("정상 실행.");
 		
 		} catch (MyException0201 e) {
 			System.out.println(e.getMessage());
@@ -22,10 +23,10 @@ public class MyExceptionEx02 {
 //		catch (MyException0201 e | MyException0202 e) {
 //			System.out.println(e.getMessage());
 //		} 위의 2줄을 1줄로 나눌 수 있다.
-//		} catch (ArrayIndexOutOfBoundsException e) {
-//			System.out.println("실행 매개값의 수가 부족합니다.");
-//			System.out.println("[실행방법]");
-//			System.out.println("java MyExceptionEx2 num1");
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("실행 매개값의 수가 부족합니다.");
+			System.out.println("[실행방법]");
+			System.out.println("java MyExceptionEx2 num1");
 		// 위의 ArrayIndexOutOfBoundsException가 int kkk block 가 try 문 안에 들어와야한다..!
 		} catch (Exception e) {
 			System.out.println("실행 매개값의 수가 부족합니다.");

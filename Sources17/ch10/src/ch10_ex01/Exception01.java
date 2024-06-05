@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 public class Exception01 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
+//	public static void main(String[] args) throws Exception {
 		BufferedReader bin = new BufferedReader(new InputStreamReader(System.in));
 		//system에서 친 것으로 버퍼를 만드는 것
 		

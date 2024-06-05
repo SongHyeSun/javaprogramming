@@ -1,0 +1,43 @@
+package ch12_ex02;
+
+class Ra1 implements Runnable {
+
+	@Override
+	public void run() {
+		for (int i=1;i<=20;i++) {
+			System.out.println(i+"대박"+ Thread.currentThread().getName());
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO: handle exception
+//				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+}
+
+class Ra2 implements Runnable {
+	public void run() {
+		for (int i=1;i<=20;i++) {
+			System.out.println(i+"월요일"+Thread.currentThread().getName());
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO: handle exception
+//				e.printStackTrace();
+			}
+				
+
+	}
+}
+
+public class RunnableEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

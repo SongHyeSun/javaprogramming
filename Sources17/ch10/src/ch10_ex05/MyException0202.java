@@ -6,13 +6,9 @@ public class MyException0202 extends Exception {
 	//hw02
 	@Override
 	public String getMessage() {
-		// TODO Auto-generated method stub
-//		return super.getMessage();
 		String ErrMsg;
 		ErrMsg = "사장님 1,000만원 넘 많아요, 좀 적당히 합시다";
 		return ErrMsg;
 	}
 	
-	
-
 }
