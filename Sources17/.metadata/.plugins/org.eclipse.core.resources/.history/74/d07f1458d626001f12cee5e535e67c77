@@ -1,0 +1,46 @@
+package ch12_ex03;
+
+// Thread화 시켜준다. thread 생성
+class Account2User extends Thread {
+	Account2  act;
+	boolean   flag;
+	
+	public Account2User(Account2 act, String name) {
+		super(name);
+		this.act = act;
+	}
+	
+	public void run () {
+		for (int i = 0; i <5 ; i++) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO: handle exception
+				// e.printStackTrace();
+				
+				//내가 act를 시켜놓으면, 다른 객체가 해당 instance에 접근할 수 없도록 하는 것
+			}	synchronized (act) {
+				if (flag) act.deposit((int) (Math.random()*10000), getName());
+				else	  act.withdraw((int)(Math.random()*10000), getName());
+				flag  = ! flag;  //flag SWAP
+			}
+		}
+	}
+}
+
+
+
+
+
+
+public class Account2Ex {
+
+	public static void main(String[] args) {
+		//girl Group --> 뉴진스
+		Account2 act1 = new Account2(10000);
+		// men Group --> BTS
+		Account2 act2 = new Account2(15000);
+
+	}
+
+}

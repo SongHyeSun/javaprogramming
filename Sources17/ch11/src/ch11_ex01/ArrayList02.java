@@ -46,8 +46,9 @@ public class ArrayList02 {
 
 	}
 
-	private static void devPrint(ArrayList<String> list) {
-		for (String str : list) {
+	//parameter는 parameter일 뿐, 이름이 위의 list랑 같을 필요는 없다. 단지 변수이름을 지정해준 것일 뿐
+	private static void devPrint(ArrayList<String> listK) {
+		for (String str : listK) {
 			System.out.print(str + "\t");
 		}
 		System.out.println("\n-----------------------------------------------------");

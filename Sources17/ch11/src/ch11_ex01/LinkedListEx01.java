@@ -25,6 +25,7 @@ public class LinkedListEx01 {
 		System.out.println("----------------Simple------------");
 		
 		i = 0;
+		//한 번 밖에 못쓴다. -> 바로 없어지기 때문에
 		while (!kk.isEmpty()) {
 			System.out.println(i+"->"+kk.poll());
 			i++;

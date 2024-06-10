@@ -42,6 +42,8 @@ public class RunnableEx01 {
 		
 		//Runnable 객체를 각각 thread로 감싸고
 		//interface로 선언한 것은 반드시 thread로 감싸주어야한다. (must!!)
+		//implement 한 것은 반드시 아래와 같은 선언 후 사용
+		//Must --> Thread th1 = new thread(r1)
 		Thread th1 = new Thread(r1, "Pr");
 		Thread th2 = new Thread(r2, "no");
 		
