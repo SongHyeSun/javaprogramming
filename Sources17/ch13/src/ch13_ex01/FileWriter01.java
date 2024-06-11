@@ -13,7 +13,8 @@ public class FileWriter01 {
 		String fileName = sc.nextLine();
 		System.out.println("저장할 글을 입력하시요");
 		String msg = sc.nextLine();
-		FileWriter fw = new FileWriter(fileName);
+		FileWriter fw = new FileWriter("src/ch13_ex01/"+fileName);
+		//파일 루트 지정해줄 수 있다. ""로
 		Date date = new Date();
 		fw.write(date + " : "+msg);
 		fw.close();

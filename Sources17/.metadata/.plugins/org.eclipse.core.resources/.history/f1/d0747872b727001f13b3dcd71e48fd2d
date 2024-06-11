@@ -1,0 +1,27 @@
+package ch15_ex01;
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class OraDelete {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("삭제할 부서를 입력하세요.");
+		String deptno = sc.nextLine();
+		Connection conn = null;
+		Statement stmt = null;
+		String driver = "oracle.jdbc.driver.OracleDriver";
+		String url	  = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}
+//HW02
+//삭제할 부서

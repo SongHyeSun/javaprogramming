@@ -1,0 +1,13 @@
+package ch15_ex01;
+
+import java.util.Scanner;
+
+public class OraProc02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정보가 궁금한 사람 사번");
+
+	}
+
+}

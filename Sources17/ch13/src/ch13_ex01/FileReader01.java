@@ -10,7 +10,7 @@ public class FileReader01 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("읽을 파일명을 입력");
 		String fileName = sc.nextLine();
-		FileReader fr = new FileReader(fileName);
+		FileReader fr = new FileReader("src/ch13_ex01/"+fileName);
 		int data = 0;
 		//-1 if the end of the stream been reached
 		while ((data=fr.read())!= -1) {
