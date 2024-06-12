@@ -1,0 +1,25 @@
+package ch15_ex02;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class MySelect02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		String driver = "com.mysql.cj.jdbc.Driver";
+		String url    = "jdbc:mysql://127.0.0.1:3306/scottdb";
+		String sql    = ;
+		
+		Connection conn = null;		//DB 연결
+		Statement  stmt = null;		//Sql 사용
+		ResultSet  rs   = null;		//조회결과 저장
+		System.out.println("MySQL  사원명단");
+		System.out.println("사번\t이름\t업무\t\t급여\t부서코드");
+		System.out.println("==============================================");
+	}
+
+}

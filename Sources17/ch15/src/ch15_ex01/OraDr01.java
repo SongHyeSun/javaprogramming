@@ -8,8 +8,10 @@ public class OraDr01 {
 	public static void main(String[] args) {
 		//처음에는 이런 코딩을 쓴다~ 한번 성공하면 copy&paste 로 사용
 		String driver = "oracle.jdbc.driver.OracleDriver";
+
 		String url	  = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
 		//				리저브드 워드(예약어)		내 자신한테 test할 수 있따.   1521번? 
+		//									shared DB serverIP
 		System.out.println("Start1");
 		try {
 			// Oracle Driver Memory Up

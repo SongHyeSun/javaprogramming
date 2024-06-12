@@ -16,6 +16,7 @@ public class OraSelect01 {
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url	  = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
 		String sql = "Select dname,loc From Dept Where deptno=" +deptno;
+//						Select * 하면 모든 행을 불러온다는 뜻, 여기서는 지정해주었다.
 		//string format으로 해도 되는데, 하나 입력은 이렇게 해도 된다.
 		Connection conn = null;		//DB
 		Statement  stmt = null;		//Sql

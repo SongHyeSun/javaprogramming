@@ -19,7 +19,7 @@ public class OraSelect02 {
 		ResultSet  rs   = null;
 		System.out.println("사원명단");
 		System.out.println("사원코드\t 사원명\t 업무 \t\t 급여 \t 일자");
-		System.out.println("=============================================");
+		System.out.println("===================================================");
 		
 		try {
 			Class.forName(driver);

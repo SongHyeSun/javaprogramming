@@ -16,7 +16,9 @@ public class OraUpdate {
 		
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url	  = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-		String sql    = "Update DEPT SET dname = '"+ dname +"', LOC = '"+loc+"' WHERE DEPTNO ="+deptno;
+//		String sql    = "Update DEPT SET dname = '"+ dname +"', LOC = '"+loc+"' WHERE DEPTNO ="+deptno;
+		String sql    = String.format("Update Dept set dname = '%s',"
+									+ " loc = '%s' where deptno = %s", dname, loc, deptno);
 		
 		Connection conn = null;
 		Statement  stmt = null;

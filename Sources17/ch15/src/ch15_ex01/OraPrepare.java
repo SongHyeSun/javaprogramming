@@ -22,6 +22,7 @@ public class OraPrepare {
 		String sql    = "Insert Into dept values(?,?,?)";
 		//							이 형식으로 문장을 준비해둔다는 뜻
 		//							해커가 조작하기에 어렵다.
+		System.out.println("sql->"+sql);
 		
 		try {
 			Class.forName(driver);

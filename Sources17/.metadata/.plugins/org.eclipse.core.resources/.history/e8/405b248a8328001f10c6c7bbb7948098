@@ -1,0 +1,55 @@
+package ch15_ex02;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+
+
+//HW02
+//Table professor 이용하여 교수번호\t이름\t직위\t\t급여\t학과코드 출력
+//		모든 row 전체 조회
+public class MySelect02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int dno = sc.nextInt();
+
+		String driver = "com.mysql.cj.jdbc.Driver";
+		String url    = "jdbc:mysql://127.0.0.1:3306/scottdb";
+		String sql    = "Select dname,phone,position From professor Where dno="+dno;
+		
+		Connection conn = null;		//DB 연결
+		Statement  stmt = null;		//Sql 사용
+		ResultSet  rs   = null;		//조회결과 저장
+		System.out.println("MySQL  교수명단");
+		System.out.println("교수번호\t이름\t직위\t\t급여\t학과코드");
+		System.out.println("==============================================");
+		
+		try {
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, "root", "mysql84");
+			stmt = conn.createStatement();
+			rs   = stmt.executeQuery(sql);
+			
+			if (rs.next()) {
+				String dname = rs.getString("dname");
+				String phone = rs.getString("phone");
+				String position = rs.getString("position");
+				
+				
+			} else {
+				System.out.println("자료가 없습니다.");
+			}
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} finally {
+			if ( rs   != null ) rs.close();
+			if ( conn != null ) conn.close();
+			if ( stmt != null ) stmt.close();
+		}
+	}
+
+}

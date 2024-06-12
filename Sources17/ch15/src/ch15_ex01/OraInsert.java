@@ -26,6 +26,7 @@ public class OraInsert {
 		// Insert, Into, dept, Values -> reserved word는 대문자를 쓰는 경우가 많다.
 		//system.out.print와 -> 가장 비슷한게 String format이다.
 		System.out.println("sql->"+sql);
+		//이걸로 DB에 끌어다가 입력해보면 오류가 났을 때 바로 알 수 있다!
 		Connection conn = null;
 		Statement  stmt = null;
 		
