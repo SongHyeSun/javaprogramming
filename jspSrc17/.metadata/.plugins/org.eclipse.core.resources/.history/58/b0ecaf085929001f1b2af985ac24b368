@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Kyunghee Ko</h1>
+	<p>이메일 : funcom@gmail.com</p>
+	<h2>Who I am?</h2>
+	<p>
+	프런트엔드 웹 기술(Front-end Web Tech.)에 관심을 가지고 있습니다.
+	현재 마이크로소프트 공인 최고기술전문가(Most Valuable Professional)로 활동 중이며,
+	제주의 한 시골 마을에서 코딩 중입니다.
+	</p>
+
+	<h2>Skills</h2>
+	<ul>
+		<li>사용언어
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+				<li>AngularJS</li>
+			</ul>
+		
+	
+	
+	
+	</ul>
+
+
+프런트엔드 웹 기술(Front-end Web Tech.)에 관심을 가지고 있습니다.
+현재 마이크로소프트 공인 최고기술전문가(Most Valuable Professional)로 활동 중이며,
+제주의 한 시골 마을에서 코딩 중입니다.
+Skills
+사용 언어
+HTML
+CSS
+Javascript
+AngularJS
+사용 툴
+Photoshop(12years)
+Dreamweaver(19years)
+Visual Studio(5years)
+Academic
+학력 사항
+출신학교 전공 기간 졸업구분
+ㅇㅇㅇ고등학교 (해당사항 없음) 2001.3 ~ 2004.2 졸업
+ㅁㅁ대학교 컴퓨터공학 2004.3 ~ 2008.2 졸업
+학교총계 전공총계 기간총계 졸업총계
+</body>
+</html>
