@@ -1,0 +1,19 @@
+package ch14_Test;
+
+//문항1번
+public class Test01{
+	
+    public static void main(String[] args) {   
+        int a=5, b=5, aa, bb;
+        aa = ++a;	//6
+        bb = b++;
+        System.out.println("aa="+aa+" bb="+bb);
+        System.out.println("a="+a+" b="+b);
+       
+        int i = 10;
+        System.out.println(i++);
+        System.out.println(++i);
+        System.out.println(i);
+    }
+}
+

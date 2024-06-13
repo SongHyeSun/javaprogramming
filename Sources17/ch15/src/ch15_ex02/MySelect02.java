@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Scanner;
 
 
 //HW02
@@ -33,11 +32,11 @@ public class MySelect02 {
 			
 			if (rs.next()) {
 				do {
-					int profno = rs.getInt(1);
-					String name = rs.getString(2);
+					int profno 		= rs.getInt(1);
+					String name 	= rs.getString(2);
 					String position = rs.getString("position");
-					int sal = rs.getInt("sal");
-					int deptno = rs.getInt("deptno");
+					int sal 		= rs.getInt("sal");
+					int deptno 		= rs.getInt("deptno");
 					System.out.printf("%d\t%s\t%s\t%d\t%d\n", profno, name, position, sal, deptno);
 					
 //					7글자 이상이 없어서 가독성을 위한 if문을 써줄 필요가 없다.
@@ -48,7 +47,7 @@ public class MySelect02 {
 				
 				
 			} else {
-				System.out.println("자료가 없습니다.");
+				System.out.println("Data No");
 			}
 			
 		} catch (Exception e) {

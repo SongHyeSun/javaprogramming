@@ -16,13 +16,21 @@ public class OraProc03 {
 		Connection        conn = null;
 		CallableStatement cs   = null;
 		
-		String driver = "oracle.jdbc.driver.OacleDriver";
-		String url	  = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+		String driver  = "oracle.jdbc.driver.OracleDriver";
+		// Localhost -> 127.0.0.1; , Port 번호:1521  , xe(orcl)-> Service ID(Sid)
+		String url     = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+
 		String sql    = "{? = call func_sal(?)}";
-		
+
+		System.out.println("sql1->"+sql);
+
 		try {
 			Class.forName(driver);
+			System.out.println("sql2->"+sql);
+
 			conn = DriverManager.getConnection(url,"scott","tiger");
+			System.out.println("sql3->"+sql);
+
 			cs   = conn.prepareCall(sql);
 			cs.setString(2, empno);
 			//얘가 parameter
@@ -44,6 +52,7 @@ public class OraProc03 {
 			if (conn != null) conn.close();
 			if (cs   != null) cs.close();
 		}
+		sc.close();
 
 	}
 
