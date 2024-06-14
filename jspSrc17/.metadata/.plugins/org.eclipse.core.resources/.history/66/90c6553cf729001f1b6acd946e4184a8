@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>회원 가입을 환영합니다</h1>
+	<ul>
+		<li><label>아이디:</label></li>
+		<input type="text" id="user_name" name="user_name"> <span>4~15자리 이내의 영문과 숫자</span>
+		<p>
+		<li><label>이메일:</label></li>
+		<input type="text" id="user_email" name="user_email">
+		<p>
+		<li><label>비밀번호:</label></li>
+		<input type="password" id="passwd" name="passwd">
+		<p>
+		<li><label>비밀번호 확인:</label></li>
+		<input type="password" id="passwd" name="passwd">
+		<p>
+		<li><input type="submit" value="회원가입"></li>
+	</ul>
+
+</body>
+</html>
