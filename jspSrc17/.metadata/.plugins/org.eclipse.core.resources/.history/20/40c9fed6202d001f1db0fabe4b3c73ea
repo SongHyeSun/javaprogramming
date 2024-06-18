@@ -1,0 +1,28 @@
+body {
+	font: 14px "맑은 고딕";
+}
+
+.container {
+	position: absolute;
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #E7E7E7;
+}
+
+header {
+	position: relative;
+	height: 280px;
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+header h1 {
+	position: absolute;
+	right: 20px;
+	bottom: 70px;
+	font-size: 3em;
+	color: #FFC;
+	text-shadow: 1px 2px 2px #000;
+}
