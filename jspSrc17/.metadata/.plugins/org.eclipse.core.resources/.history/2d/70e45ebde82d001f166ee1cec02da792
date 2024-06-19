@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Var let02</h1>
+	<button onclick="varTest()">varTest</button>
+	<button onclick="letTest()">letTest</button>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+		var varName 	= "varName1...";
+		let letName 	= "letName1...";
+		const constName = "constName1";
+		kkName 			= "kkk...;"
+</script>
+</head>
+<body>
+	<h1>Var let 01</h1>
+</body>
+</html>

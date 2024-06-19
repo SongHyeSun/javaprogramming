@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	document.write("<center>");
+	document.write("<h3> [ 정 수 형] </h3>");
+	document.write("<h4>");
+	document.write("<hr> 1 0 진 수 == >"+10);
+	document.write("<br>&nbsp 8 진 수 == >"+0o12);
+	document.write("<br> 1 6 진 수 == >"+0xc);
+	document.write("</h4>");
+</script>
+</head>
+<body>
+	<h1>Char</h1>
+</body>
+</html>

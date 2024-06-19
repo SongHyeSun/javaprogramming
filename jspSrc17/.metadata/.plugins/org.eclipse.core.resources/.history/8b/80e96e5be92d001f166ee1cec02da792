@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	a = 7;
+	b = "대박";
+	var c = 1.56;
+	var d = '5분';
+	let e = 'eee분';
+	document.write("정수a : "+a+"<p>");
+	document.write("문자b : "+b+"<br>");
+	document.write("실수c : "+c+"<br>");
+	document.write("문자d : "+d+"<br>");
+	document.write("문자e : "+e+"<br>");
+</script>
+</head>
+<body>
+	<h1>Var let02</h1>
+	<button onclick="varTest()">varTest</button>
+	<button onclick="letTest()">letTest</button>
+</body>
+</html>
