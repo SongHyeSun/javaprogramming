@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>dom02 Event 통해 수행</h1>
+	<p id="text">기본색 검정</p>
+	<button ondblclick="chgRedColor()">빨간색</button><p>
+	<button onclick="chrOrangeColor()">오렌지색</button>
+</body>
+</html>
