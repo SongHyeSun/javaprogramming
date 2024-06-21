@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function chk() {
+		var str = "내가 좋아하는 색깔은? \n";
+		var vIndex = frm.color.selectedIndex;
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

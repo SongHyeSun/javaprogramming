@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="" name="frm">
+		<h2>다음에서 선택</h2>
+		1. 가장 좋아하는 영화 한 개만을 선택.<br>
+		<input type="radio" name="movie" value="범죄도시" id="m1">
+		범죄도시
+		<input type="radio" name="movie" value="그녀가죽었다" id="m2">
+		<label for="m2">그녀가 죽었다</label>
+		<input type="radio" name="movie" value="인사이드 아웃2" id="m3">
+		<label for="m3">인사이드 아웃2</label>
+		<hr>
+		2. 좋아하는 노래를 선택. <br>
+		<input type="radio" name="song" value="오랜날 오랜밤" id="s1">
+		오랜날 오랜밤
+		<input type="radio" name="song" value="시간과 낙엽" id="s2">
+		<label for="s2">시간과 낙엽</label>
+		<input type="radio" name="song" value="Blueming" id="s3">
+		<label for="s2">Blueming</label>
+		<input type="radio" name="song" value="Hero" id="s4">
+		<label for="s2">Hero</label>
+		<hr>
+		<input type="button" value="확인" onclick="chk()">
+	</form>
+</body>
+</html>

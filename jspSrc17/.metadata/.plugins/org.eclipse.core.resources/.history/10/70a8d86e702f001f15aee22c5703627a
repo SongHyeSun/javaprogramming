@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2> 로그인 </h2>
+	<form action="" name="frm">
+		이름 : <input type="text" name="id"><p>
+		암호 : <input type="password" name="pass"><p>
+		<input type="button" value="확인" onclick="chk()"><p>
+	</form>
+</body>
+</html>

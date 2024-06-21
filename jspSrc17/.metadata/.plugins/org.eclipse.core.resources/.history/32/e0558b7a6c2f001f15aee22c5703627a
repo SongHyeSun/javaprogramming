@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<h2>좋아하는 영화를 선택하셈</h2>
+	<form action="" name="frm">
+		리미트 <input type="checkbox" name="ch1" id="m1" value="리미트">
+		<label for="m2">한산</label>
+		<input type="checkbox" name="ch2" id="m2" value="한산">
+		<label for="m2">Hunt</label>
+		<input type="checkbox" name="ch3" id="m4" value="Hunt">
+		<input type="button" value="확인" onclick="chk()">
+		
+	</form>
+</body>
+</html>
