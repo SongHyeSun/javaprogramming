@@ -15,7 +15,7 @@
 			frm.name.focus();
 			return;
 		}
-		if (frm.age.value.length==0) {
+		if (!frm.age.value) {
 			alert("나이를 입력하세요.");
 			frm.age.focus();
 			return;
@@ -26,9 +26,9 @@
 		}
 		
 		var str = document.getElementById("addr");
-		if (str.value=="") {
+		if (str.value.length==0) {
 			alert("주소를 입력하세요.");
-			frm.addr.focus();
+			addr.focus();
 			return;
 		}
 		

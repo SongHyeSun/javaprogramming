@@ -7,7 +7,7 @@
 	function chk() {
 		var str = "내가 좋아하는 색깔은? \n";
 		var selIndex = frm.color.selectedIndex;
-		alert("selIndex->"+selIndex);
+		/* alert("selIndex->"+selIndex); */
 		document.body.style.backgroundColor = frm.color[selIndex].value;
 		document.body.style.color = "white";
 	}
@@ -25,7 +25,7 @@
 			<option value="navy">남색</option>
 			<option value="violet">보라색</option>	
 		</select><p>
-		<input type="button" value="확인">
+		<input type="button" value="확인" onclick="chk()">
 	</form>
 </body>
 </html>
